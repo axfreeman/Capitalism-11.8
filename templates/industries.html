@@ -1,0 +1,50 @@
+{% extends "base.html" %} {% block content %}
+<h3 class="w3-center">Industries in project {{ simulation }} </h3>
+<table id="commodities" class="w3-table-all w3-card w3-small">
+    <thead>
+        <tr>
+            {% if user.is_staff %}
+            <th class="w3-right-align">User</th>
+            {% endif %}
+
+            <th>Name</th>
+            <th>Commodity</th>
+            <th class="w3-right-align">Scale</th>
+            <th class="w3-right-align">Growth rate</th>
+            <th class="w3-right-align">Money</th>
+            <th class="w3-right-align">Initial capital</th>
+            <th class="w3-right-align">Work in progress</th>
+            <th class="w3-right-align">Capital</th>
+            <th class="w3-right-align">Profit</th>
+            <th class="w3-right-align">Profit rate</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for industry in industry_list %}
+        <tr>
+            {% if user.is_staff %}
+            <td>{{ industry.simulation.user }}</td>
+            {% endif %}
+
+            <td><a href ="{{industry.id}}"> {{ industry.name }} 
+
+                {% if user.is_staff %}
+                ({{ industry.id }})
+                {% endif %}
+    
+            </a></td>
+            <td><a href ="/commodities/{{industry.commodity.id}}"> {{ industry.commodity.name }} </a></td>
+            <td class="w3-right-align">{{ industry.output_scale|floatformat:0 }}</td>
+            <td class="w3-right-align">{{ industry.output_growth_rate }}</td>
+            <td class="w3-right-align">{{ industry.money_stock.size|floatformat:0}}</td>
+            <td class="w3-right-align">{{ industry.initial_capital|floatformat:0 }}</td>
+            <td class="w3-right-align">{{ industry.work_in_progress|floatformat:0 }}</td>
+            <td class="w3-right-align">{{ industry.current_capital|floatformat:0 }}</td>
+            <td class="w3-right-align">{{ industry.profit|floatformat:0 }}</td>
+            <td class="w3-right-align">{{ industry.profit_rate }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %} 

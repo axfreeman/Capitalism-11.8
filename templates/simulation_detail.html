@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block content %}
+<div class="w3-card-4" style="width:50%; margin:auto;padding-top:3em">
+  <header class="w3-container w3-blue">
+    <h2 class="w3-center"> {{ simulation.name }} ({{ simulation.id }})</h2>
+  </header>
+  <div class="w3-container">
+    <table id="simulation" class="w3-table-all w3-card w3-small">
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> User </td>
+          <td>{{ simulation.user }} </td>
+        <tr>
+        <tr>
+          <td> State </td>
+          <td>{{ simulation.state }}</td>
+        <tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block content %}
+<h3 class="w3-center">Social Classes in project {{ simulation }} </h3>
+<table id="socialclasses" class="w3-table-all w3-card w3-small">
+    <thead>
+        <tr>
+            <th>Name</th>>
+            <th>Commodity</th>
+            <th class="w3-right-align">Population</th>
+            <th class="w3-right-align">Participation ratio </th>
+            <th class="w3-right-align">Consumption ratio </th>
+            <th class="w3-right-align">Money</th>
+            <th class="w3-right-align">Revenue</th>
+            <th class="w3-right-align">Assets</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for sc in social_class_list %}
+        <tr>
+            <td> {{ sc.link |safe}} </td>
+            <td> {{ sc.commodity.link |safe}} </td>
+            <td class="w3-right-align"> {{ sc.population | floatformat:0 }} </td>
+            <td class="w3-right-align"> {{ sc.participation_ratio| floatformat:1 }} </td>
+            <td class="w3-right-align"> {{ sc.consumption_ratio | floatformat:1 }} </td>
+            <td class="w3-right-align"> {{ sc.money_stock.size | floatformat:0}}</td>
+            <td class="w3-right-align"> {{ sc.revenue | floatformat:0}} </td>
+            <td class="w3-right-align"> {{ sc.assets | floatformat:0}} </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

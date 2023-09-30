@@ -1,0 +1,77 @@
+<div class=w3-top>
+  <div class="w3-bar w3-light-grey" style="width:100%">
+    {% if user.is_authenticated %}
+    <a href="{% url 'user_dashboard' %}" class="w3-bar-item w3-button">Home</a>
+    <a href="/api/" class="w3-bar-item w3-button">API</a>
+
+    {% if user.is_staff %}
+    <a href="{% url 'admin-reset' %}" class="w3-bar-item w3-button">Reset(CAREFUL!)</a>
+    {% else %}
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="actionFunction()">Actions</button>
+      <div id="Actions" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="/retrace" class="w3-bar-item w3-button">Clear Trace</a>
+        <a href="/setup/" class="w3-bar-item w3-button">Restart</a>
+        <a href="/demand" class="w3-bar-item w3-button">Set Demand</a>
+        <a href="/trade" class="w3-bar-item w3-button">Trade</a>
+        <a href="/produce" class="w3-bar-item w3-button">Produce</a>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="w3-dropdown-click"><button class="w3-button" onclick="tablesFunction()">Tables </button>
+      <div id="Tables" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="/simulations" class="w3-bar-item w3-button">Simulations</a>
+        <a href="/buyers" class="w3-bar-item w3-button">Buyers</a>
+        <a href="/sellers" class="w3-bar-item w3-button">Sellers</a>
+        <a href="{% url 'commodity-list' %}" class="w3-bar-item w3-button">Commodities</a>
+        <a href="/industries" class="w3-bar-item w3-button">Industries</a>
+        <a href="/social_classes" class="w3-bar-item w3-button">Classes</a>
+        <a href="/stocks" class="w3-bar-item w3-button">Stocks</a>
+        {% if user.is_staff %}
+        <a href="/owners" class="w3-bar-item w3-button">Owners</a>
+        {% endif %}
+        <a href="/economy" class="w3-bar-item w3-button">Economy</a>
+        <a href="/trace" class="w3-bar-item w3-button">Trace</a>
+      </div>
+    </div>
+    {% if not user.is_staff %}
+    <a href="/user-dashboard/" class="w3-bar-item w3-button">Dashboard</a>
+    {% endif %}
+
+    {% if user.is_staff %}
+    <a href="/admin/" class="w3-bar-item w3-button">Admin</a>
+    {% endif %}
+
+    <div  style="float:right">
+      <div class="w3-bar-item">{{ user.username }}</div>
+      <a href="{% url 'logout' %}" class="w3-bar-item w3-button" style="float:right">Logout</a>
+    </div>
+    {% else %}
+    <div class="w3-bar-item" margin:auto">Welcome back to Capitalism!</div>
+    <!-- <p>Welcome to Capitalism</p> -->
+    {% endif %}
+  </div>
+</div>
+
+
+<script>
+  function actionFunction() {
+    var x = document.getElementById("Actions");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+<script>
+  function tablesFunction() {
+    var x = document.getElementById("Tables");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>

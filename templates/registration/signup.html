@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %} {% load crispy_forms_tags %}
+<div class="w3-container" style="width:50% ">
+    <div class="w3-card-2 ">
+        <header class="w3-container w3-blue ">
+            <h3>Sign Up</h3>
+        </header>
+        <h5 class="w3-padding-large">Signing up allows you to log in as a user, run the simulation, view the output and maintain a persistent, private copy of your simulation that you can return to at any time. (unless the site falls over). We will not share the information with
+            anyone. However, if you run into problems and ask us to fix them, we may access your account data for diagnostic purposes.</h5>
+
+    </div>
+    <form method="post">
+        {% csrf_token %} {{ form|crispy }}
+        <button type="submit" class="btn btn-primary">Sign up</button>
+    </form>
+</div>
+{% endblock %}

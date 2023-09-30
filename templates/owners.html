@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+<h3 class="w3-center">Owners in project {{ simulation }} </h3>
+<h4 class="w3-center">For more detail see the industries and social classes tables</h4>
+<table id="owners" class="w3-table-all w3-card w3-small">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>commodity</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for owner in owner_list %}
+        <tr>
+            <td>{{ owner.id }}</td>
+            <td><a href ="{{owner.id}}"> {{ owner.name }} </a></td>
+            <td><a href ="/commodities/{{owner.commodity.id}}"> {{ owner.commodity.name }} </a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %} 

@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block content %} {% load crispy_forms_tags %}
+<div style="width:30%; padding-top:5em; margin:auto">
+  <form method="post" action="{% url 'login' %}">
+    {% csrf_token %} {{ form| crispy }}
+    <input type="submit" value="login" />
+    <input type="hidden" name="next" value="{{ next }}" />
+  </form>
+</div>
+{# Assumes you setup the password_reset view in your URLconf #}
+<p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+
+{% endblock %}

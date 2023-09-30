@@ -1,0 +1,121 @@
+{% extends "base.html" %} {% block content %}
+<div class="w3-card-4">
+  <header class="w3-container w3-small w3-blue">
+    <h4 class="w3-center">Economy</h4>
+  </header>
+
+  <div class="w3-container w3-card">
+    {% for industry in industries %}
+    <table class="w3-table-all w3-small">
+      <thead>
+        <tr class="w3-light-blue">
+          <th>Industry</th>
+          <th>Commodity</th>
+          <th class="w3-right-align">Supply (=sales stock)</th>
+          <th class="w3-right-align">Money (=money stock)</th>
+          <th class="w3-right-align">Output Scale</th>
+          <th class="w3-right-align">Initial Capital</th>
+          <th class="w3-right-align">Current Capital</th>
+          <th class="w3-right-align">Profit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td>{{industry.link|safe}}</td>
+        <td><a href="/commodities/{{industry.commodity.id}}/">{{ industry.commodity }}</a></td>
+        <td class="w3-right-align"> {{industry.sales_stock.size |floatformat:0}} </td>
+        <td class="w3-right-align"> {{industry.money_stock.size |floatformat:0}} </td>
+        <td class="w3-right-align"> {{industry.output_scale |floatformat:0}} </td>
+        <td class="w3-right-align"> {{industry.initial_capital|floatformat:0}} </td>
+        <td class="w3-right-align"> {{industry.current_capital |floatformat:0}} </td>
+        <td class="w3-right-align"> {{industry.profit |floatformat:0}} </td>
+
+      </tbody>
+    </table>
+    <div class="w3-card">
+      <table class="w3-table-all w3-small " style="width:90%; margin:auto">
+        <thead>
+          <tr class="w3-light-grey">
+            <th>Stock Details</th>
+            <th>Commodity</th>
+            <th>Usage</th>
+            <th class="w3-right-align"> Size</th>
+            <th class="w3-right-align"> Requirement</th>
+            <th class="w3-right-align"> Value</th>
+            <th class="w3-right-align"> Price</th>
+            <th class="w3-right-align"> Demand</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for stock in industry.stocks.all %}
+          <tr>
+            <td> {{stock.link|safe}}</td>
+            <td> {{stock.commodity.link|safe}}</td>
+            <td> {{stock.usage_type}}</td>
+            <td class="w3-right-align"> {{stock.size|floatformat:0}}</td>
+            <td class="w3-right-align"> {{stock.requirement|floatformat:0}}</td>
+            <td class="w3-right-align"> {{stock.value|floatformat:0}}</td>
+            <td class="w3-right-align"> {{stock.price|floatformat:0}}</td>
+            <td class="w3-right-align"> {{stock.demand|floatformat:0}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% for socialclass in social_classes %}
+  <table class="w3-table-all w3-small">
+    <thead>
+      <tr class="w3-light-blue">
+        <th>Social Class</th>
+        <th>Commodity</th>
+        <th class="w3-right-align">Population</th>
+        <th class="w3-right-align">Consumption Ratio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <td>{{socialclass.link |safe}}</td>
+      <td>{{ socialclass.commodity.link|safe }}</td>
+      <td class="w3-right-align"> {{socialclass.population|floatformat:0}} </td>
+      <td class="w3-right-align"> {{socialclass.consumption_ratio|floatformat:0}} </td>
+
+    </tbody>
+  </table>
+  <div class="w3-card" style="width:90%; margin:auto">
+  <table class="w3-table-all w3-small">
+    <thead>
+      <tr class="w3-light-grey">
+        <th> Stock Details</th>
+        <th> Commodity</th>
+        <th> Usage</th>
+        <th  class="w3-right-align"> Size</th>
+        <th class="w3-right-align"> Requirement</th>
+        <th class="w3-right-align"> Value</th>
+        <th class="w3-right-align"> Price</th>
+        <th class="w3-right-align"> Demand</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for stock in socialclass.stocks.all %}
+
+      <tr>
+        <td> {{stock.link|safe }}</td>
+        <td> {{stock.commodity.link |safe}}</td>
+        <td> {{stock.usage_type}}</td>
+        <td  class="w3-right-align"> {{stock.size|floatformat:0}}</td>
+        <td  class="w3-right-align"> {{stock.requirement|floatformat:0}}</td>
+        <td  class="w3-right-align"> {{stock.value|floatformat:0}}</td>
+        <td  class="w3-right-align"> {{stock.price|floatformat:0}}</td>
+        <td class="w3-right-align"> {{stock.demand|floatformat:0}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+  {% endfor %}
+</div>
+
+</div>
+{% endblock %}

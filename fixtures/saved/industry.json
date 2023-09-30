@@ -1,0 +1,249 @@
+[
+  {
+    "model": "economy.industry",
+    "pk": 1,
+    "fields": {
+      "output_scale": 6000,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 2,
+    "fields": {
+      "output_scale": 3000,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 3,
+    "fields": {
+      "output_scale": 3000,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 4,
+    "fields": {
+      "output_scale": 6000,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 5,
+    "fields": {
+      "output_scale": 1500,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 6,
+    "fields": {
+      "output_scale": 3000,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 7,
+    "fields": {
+      "output_scale": 6000,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 8,
+    "fields": {
+      "output_scale": 2400,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 9,
+    "fields": {
+      "output_scale": 600,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 10,
+    "fields": {
+      "output_scale": 3000,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 11,
+    "fields": {
+      "output_scale": 6000,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 12,
+    "fields": {
+      "output_scale": 6000,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 13,
+    "fields": {
+      "output_scale": 6000,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 14,
+    "fields": {
+      "output_scale": 200,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 15,
+    "fields": {
+      "output_scale": 500,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 16,
+    "fields": {
+      "output_scale": 500,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 17,
+    "fields": {
+      "output_scale": 3000,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 18,
+    "fields": {
+      "output_scale": 3000,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  },
+  {
+    "model": "economy.industry",
+    "pk": 19,
+    "fields": {
+      "output_scale": 3000,
+      "output_growth_rate": 0,
+      "initial_capital": 0.0,
+      "work_in_progress": 0.0,
+      "current_capital": 0.0,
+      "profit": 0.0,
+      "profit_rate": 0.0
+    }
+  }
+]

@@ -1,0 +1,54 @@
+{% extends "base.html" %} {% block content %} {% load crispy_forms_tags %}
+<div style="width:30%; padding-top:5em; margin:auto">
+  <form>
+    <!-- Name input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="form1Example1" class="form-control" />
+      <label class="form-label" for="form1Example1">Name</label>
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      <input type="password" id="form1Example2" class="form-control" />
+      <label class="form-label" for="form1Example2">Password</label>
+    </div>
+
+    <!-- 2 column grid layout for inline styling -->
+    <div class="row mb-4">
+      <div class="col d-flex justify-content-center">
+        <!-- Checkbox -->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+          <label class="form-check-label" for="form1Example3"> Remember me </label>
+        </div>
+      </div>
+
+      <div class="col">
+        <!-- Simple link -->
+        <a href="#!">Forgot password?</a>
+      </div>
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+  </form>
+</div>
+<div class="w3-container" style="width:30%">
+  {% if form.errors %}
+  <p>Your username and password didn't match. Please try again.</p>
+  {% endif %} {% if next %} {% if user.is_authenticated %}
+  <p>Your account doesn't have access to this page. To proceed, please login with an account that has access.</p>
+  {% else %}
+  <p>Please login to see this page.</p>
+  {% endif %} {% endif %}
+
+  <form method="post" action="{% url 'login' %}">
+    {% csrf_token %} {{ form| crispy }}
+    <input type="submit" value="login" />
+    <input type="hidden" name="next" value="{{ next }}" />
+  </form>
+</div>
+{# Assumes you setup the password_reset view in your URLconf #}
+<p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+
+{% endblock %}

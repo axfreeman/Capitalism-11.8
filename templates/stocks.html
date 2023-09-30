@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block content %}
+<h3 class="w3-center">Stocks</h3>
+<table id="stocks" class="w3-table-all w3-card w3-small">
+    <thead>
+        <tr>
+            {% if user.is_staff %}
+            <th class="w3-right-align">User</th>
+            <th class="w3-right-align">Name</th>
+            {% endif %}
+
+            <th> id </th>
+            <th> simulation </th>
+            <th> Commodity </th>
+            <th> Usage </th>
+            <th> Owner </th>
+            <th> Size </th>
+            <th> Requirement </th>
+            <th> Value </th>
+            <th> Price </th>
+            <th> Demand </th>
+            <th> Monetary demand </th>            
+        </tr>
+    </thead>
+    <tbody>
+        {% for stock in stock_list %}
+        <tr>
+            {% if user.is_staff %}
+            <td>{{ stock.simulation.user }}</th>
+            <td>{{ stock.name }} </td>
+            {% endif %}
+
+            <td>{{ stock.id}} </td>
+            <td><a href ="/simulations/{{stock.simulation.id}}">{{ stock.simulation}}</a></td>
+            <td><a href ="/commodities/{{stock.commodity.id}}">{{ stock.commodity.name}}</a> </td>
+            <td>{{ stock.usage_type}} </td>
+            <td>{{ stock.owner}} </td>
+            <td>{{ stock.size |floatformat:0}} </td>
+            <td>{{ stock.requirement|floatformat:4}} </td>
+            <td>{{ stock.value|floatformat:0}} </td>
+            <td>{{ stock.price|floatformat:0}} </td>
+            <td>{{ stock.demand|floatformat:0}} </td>
+            <td>{{ stock.monetary_demand|floatformat:0}} </td>
+        </tr>
+        {% endfor %}
+
+
+
+    </tbody>
+</table>
+
+{% endblock %} 

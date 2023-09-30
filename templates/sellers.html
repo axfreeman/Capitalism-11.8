@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block content %}
+<h3 class="w3-center">Sellers</h3>
+<table id="sellers" class="w3-table-all w3-card w3-small">
+    <thead>
+        <tr>
+            <th> simulation </th>
+            <th> Seller stock </th>
+            <th> Seller</th>
+            <th> Commodity</th>
+            <th> Supply </th>
+            <th> Money stock </th>
+            <th> Money </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for seller in seller_list %}
+        <tr>
+            <td>{{ seller.salesStock.simulation.id}} </td>
+            <td>{{ seller.salesStock.link|safe}} </td>
+            <td>{{ seller.salesStock.owner.link|safe}} </td>
+            <td>{{ seller.salesStock.commodity.link|safe}} </td>
+            <td>{{ seller.salesStock.size}} </td>
+            <td>{{ seller.moneyStock.link|safe}} </td>
+            <td>{{ seller.moneyStock.size}} </td>
+        </tr>
+        {% endfor %}
+
+
+
+    </tbody>
+</table>
+
+{% endblock %} 

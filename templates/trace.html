@@ -1,0 +1,57 @@
+{% extends "base.html" %} {% block content %}
+<style>
+    .trace-level1 {
+        color: blue;
+        margin-left: 1em;
+    }
+
+    .trace-level2 {
+        color: green;
+        margin-left: 2em;
+        text-indent: 2em;
+    }
+
+    .trace-level3 {
+        color: rgb(66, 3, 3);
+        margin-left: 3em;
+        text-indent: 3em;
+    }
+
+    .trace-level4 {
+        color: darkgreen margin-left: 4em;
+        text-indent: 4em;
+    }
+
+    .simulation-object {
+        color: purple;
+    }
+
+    .quantity-object {
+        font-weight: 600;
+    }
+</style>
+<table id="trace" class="w3-table-all w3-card w3-small">
+    <colgroup>
+        <col style="width:20%;">
+        <col style="width:80%;">
+    </colgroup>
+    <thead>
+        <tr style="background-color: lightgrey";>
+            <th> Simulation </th>
+            <th> Message </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for trace in trace_list %}
+        <tr>
+            <td>{{ trace.simulation}} </td>
+            <td class="trace-level{{trace.level}}">{{ trace.message|safe}} </td>
+        </tr>
+        {% endfor %}
+
+
+
+    </tbody>
+</table>
+
+{% endblock %}

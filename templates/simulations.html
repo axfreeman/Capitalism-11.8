@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% block content %}
+<h3 class="w3-center">Projects</h3>
+<table id="commodities" class="w3-table-all w3-card w3-small">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>User</th>
+            <th>Name</th>
+            <th>State</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for simulation in simulation_list %}
+        <tr>
+            <td> {{ simulation.id }} </td>
+            <td> {{ simulation.user }}</td>
+            <td> {{ simulation.name }}</td>
+            <td> {{ simulation.state }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %} 
