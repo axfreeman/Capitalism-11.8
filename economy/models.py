@@ -8,6 +8,7 @@ from django.contrib.auth.models import User
 # from polymorphic.models import PolymorphicModel
 
 Owner=typing.NewType("Owner",models.Model) # to allow forward reference in class 'Commodity'
+Stock=typing.NewType("Stock",models.Model) # to allow forward reference in class 'Simulation'
 
 class Simulation(models.Model):
     user=models.ForeignKey(User,default=None,null=True,on_delete=models.CASCADE)
@@ -39,13 +40,14 @@ class Simulation(models.Model):
         self.time_stamp=self.time_stamp+1
         self.pk=None
         self.save()
-        print(f'created new simulation {self.name} of type {self.state} owned by {self.user}')
+        print(f'created new simulation {self.name} of type {self.state} owned by {self.user} with time stamp {self.time_stamp}')
 # clone the commodities first
         for commodity in new_commodities:
             commodity.pk=None
             commodity.simulation=self
+            commodity.time_stamp=self.time_stamp
             commodity.save()        
-            print(f' Cloned commodity {commodity.name} for user {self.user}. ID is {commodity.pk}')
+            print(f' Cloned commodity {commodity.name} for user {self.user}. ID is {commodity.pk} with time stamp {commodity.time_stamp}')
 # Now clone the children recursively
         for commodity in new_commodities:
             new_industries= Industry.objects.filter(commodity=commodity)
@@ -57,6 +59,7 @@ class Simulation(models.Model):
                 new_industry.id=None
                 new_industry.commodity=commodity 
                 new_industry.simulation=self
+                new_industry.time_stamp=self.time_stamp
                 new_industry.save()                
                 print(f'  Cloned industry {new_industry.name} for user {self.user}. ID is {new_industry.pk}')
                 for stock in new_stocks:
@@ -64,10 +67,10 @@ class Simulation(models.Model):
                     new_stock.pk=None
                     new_stock.id=None
                     new_stock.owner=new_industry
-                    # old_stock=Stock.objects.get(name=new_stock.name,time_stamp=????)
-#TODO find the commodity
                     new_stock.simulation=self
                     new_stock.save()
+                    # NOTE at this point we don't have the correct commodity object for the stock. 
+                    # Instead, we have the commodity object of the old stock, which is one time_stamp behind
                     print(f'   Cloned stock of {new_stock.commodity.name} of type {new_stock.usage_type} for industry {industry.name} with old ID {stock.id} and new ID {new_stock.id}' )
             for social_class in new_social_classes:
                 new_stocks=Stock.objects.filter(owner=social_class)
@@ -83,16 +86,25 @@ class Simulation(models.Model):
                    new_stock.pk=None
                    new_stock.id=None
                    new_stock.owner=new_social_class
-#TODO find the commodity
                    new_stock.simulation=self
-                   new_stock.save()
+                   new_stock.save() 
                    print(f'   Cloned stock of {new_stock.commodity.name} of type {new_stock.usage_type} for social class {social_class.name} with old ID {stock.id} and new ID {new_stock.id}')
+
+# NOW revisit all the stocks and set their commodity properly
+        for stock in Stock.objects.all():
+                                # old_stock=Stock.objects.get(name=new_stock.name,time_stamp=self.time_stamp-1)
+            old_commodity=stock.commodity # at this point, we havven't yet updated to the new commodity. We have to find it.
+            new_commodity=Commodity.objects.get(simulation=stock.simulation,name=old_commodity.name,time_stamp = stock.time_stamp)
+            stock.commodity=new_commodity
+            stock.save()
+            print(f'updated the time stamp of the commodity of the stock called {stock.name} from {old_commodity.time_stamp} to {stock.commodity.time_stamp}')
 
         return
     
 class Commodity(models.Model):
     name = models.CharField(max_length=255, default="UNDEFINED")
     simulation = models.ForeignKey(Simulation, related_name='commodities', default=None,on_delete=models.CASCADE)
+    time_stamp=models.IntegerField(default=0)
     origin = models.CharField(max_length=255,default="UNDEFINED")
     usage = models.CharField(max_length=255, default="UNDEFINED")
     size = models.FloatField(default=0)
@@ -156,6 +168,7 @@ class Owner(models.Model):
 
 class Industry(Owner):
     simulation = models.ForeignKey(Simulation, related_name='industries', default=1, on_delete=models.CASCADE)
+    time_stamp=models.IntegerField(default=0)
     output_scale = models.IntegerField(null=True,default=1)
     output_growth_rate = models.IntegerField(null=True,default=1)
     initial_capital=models.FloatField(null=True,default=0)
@@ -211,6 +224,7 @@ class Industry(Owner):
 
 class SocialClass(Owner):
     simulation = models.ForeignKey(Simulation, related_name='socialclasses', default=1, on_delete=models.CASCADE)
+    time_stamp=models.IntegerField(default=0)
     population = models.IntegerField(null=True,default=1000)
     participation_ratio = models.FloatField(null=True,default=1)
     consumption_ratio = models.FloatField(null=True,default=1)
@@ -257,6 +271,7 @@ class SocialClass(Owner):
 class Stock(models.Model):
     name=models.CharField(max_length=200,null=False,default="UNDEFINED")
     simulation = models.ForeignKey(Simulation, on_delete=models.CASCADE)
+    time_stamp=models.IntegerField(default=0)
     commodity = models.ForeignKey(Commodity,related_name="commodity_stock",on_delete=models.CASCADE)
     usage_type  =models.CharField(max_length=255,null=True, default="UNDEFINED")  #! sales, productive, consumption, money
     owner=models.ForeignKey(Owner,related_name='stocks',on_delete=models.CASCADE)
@@ -275,7 +290,8 @@ class Stock(models.Model):
     def owner_money_stock(self):
         owner=self.owner
         return owner.money_stock
-    
+#This class is rebuild from scratch at each forward step    
+#TODO think about garbage collection and whether it should have a time stamp
 class Buyer(models.Model):
     simulation=models.ForeignKey(Simulation,on_delete=models.CASCADE, related_name='BuyerSimulation',null=True)
     purchaseStock=models.ForeignKey(Stock, on_delete=models.CASCADE, related_name='BuyerStock',null=False)
@@ -284,6 +300,8 @@ class Buyer(models.Model):
     def link(self): return f'<a href = "/buyers/{self.id}">{self.name}</a>'
     def owner(self): return self.purchaseStock.owner
 
+#This class is rebuild from scratch at each forward step    
+#TODO think about garbage collection and whether it should have a time stamp
 class Seller(models.Model):
     simulation=models.ForeignKey(Simulation,on_delete=models.CASCADE, related_name='SellerSimulation',null=True)
     salesStock=models.ForeignKey(Stock,on_delete=models.CASCADE,related_name='SellerStock',null=False)
@@ -294,6 +312,7 @@ class Seller(models.Model):
 
 class Trace(models.Model):
     simulation=models.ForeignKey(Simulation,null=True, default=None,on_delete=models.CASCADE)
+    time_stamp=models.IntegerField(default=0) #TODO is this necessary?
     project_id = models.IntegerField(default=0, null=False)
     level = models.IntegerField(default=0, null=False)
     message = models.CharField(max_length=250, null=False)

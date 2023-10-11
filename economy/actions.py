@@ -56,6 +56,8 @@ def setup(request):
     Buyer.objects.all().delete()
     for s in Stock.objects.filter(Q(usage_type="Production") | Q(usage_type="Consumption"),simulation__pk=1):
         m=s.owner_money_stock()
+        o=s.owner
+        c=s.commodity
         report(simulation,3,f' Adding buyer {s.link} together with {m.link} owned by {o.link} buying {c.link}')
         buyer=Buyer(simulation=s.simulation,purchaseStock=s,moneyStock=m)
         buyer.save()

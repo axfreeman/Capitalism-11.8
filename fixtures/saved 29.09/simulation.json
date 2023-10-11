@@ -1,1 +1,154 @@
-[{"model": "economy.simulation", "pk": 1, "fields": {"user": 1, "name": "Simple Reproduction", "time_stamp": 0, "state": "TEMPLATE", "periods_per_year": 1, "population_growth_rate": 1.0, "investment_ratio": 1.0, "labour_supply_response": "UNDEFINED", "price_response_type": "UNDEFINED", "melt_response_type": null, "currency_symbol": "$", "quantity_symbol": "#", "melt": 1.0}}, {"model": "economy.simulation", "pk": 2, "fields": {"user": 1, "name": "SR with lower MELT", "time_stamp": 0, "state": "TEMPLATE", "periods_per_year": 1, "population_growth_rate": 1.0, "investment_ratio": 1.0, "labour_supply_response": "UNDEFINED", "price_response_type": "UNDEFINED", "melt_response_type": null, "currency_symbol": "$", "quantity_symbol": "#", "melt": 1.0}}, {"model": "economy.simulation", "pk": 3, "fields": {"user": 1, "name": "SR with halved period", "time_stamp": 0, "state": "TEMPLATE", "periods_per_year": 1, "population_growth_rate": 1.0, "investment_ratio": 1.0, "labour_supply_response": "UNDEFINED", "price_response_type": "UNDEFINED", "melt_response_type": null, "currency_symbol": "$", "quantity_symbol": "#", "melt": 1.0}}, {"model": "economy.simulation", "pk": 4, "fields": {"user": 1, "name": "SR two consumption goods", "time_stamp": 0, "state": "TEMPLATE", "periods_per_year": 1, "population_growth_rate": 1.0, "investment_ratio": 1.0, "labour_supply_response": "UNDEFINED", "price_response_type": "UNDEFINED", "melt_response_type": null, "currency_symbol": "$", "quantity_symbol": "#", "melt": 1.0}}, {"model": "economy.simulation", "pk": 5, "fields": {"user": 1, "name": "Expanded Reproduction", "time_stamp": 0, "state": "TEMPLATE", "periods_per_year": 1, "population_growth_rate": 1.0, "investment_ratio": 1.0, "labour_supply_response": "UNDEFINED", "price_response_type": "UNDEFINED", "melt_response_type": null, "currency_symbol": "$", "quantity_symbol": "#", "melt": 1.0}}, {"model": "economy.simulation", "pk": 6, "fields": {"user": 1, "name": "SR with equalisation", "time_stamp": 0, "state": "TEMPLATE", "periods_per_year": 1, "population_growth_rate": 1.0, "investment_ratio": 1.0, "labour_supply_response": "UNDEFINED", "price_response_type": "UNDEFINED", "melt_response_type": null, "currency_symbol": "$", "quantity_symbol": "#", "melt": 1.0}}, {"model": "economy.simulation", "pk": 7, "fields": {"user": 1, "name": "Three-sector Dynamic", "time_stamp": 0, "state": "TEMPLATE", "periods_per_year": 1, "population_growth_rate": 1.0, "investment_ratio": 1.0, "labour_supply_response": "UNDEFINED", "price_response_type": "UNDEFINED", "melt_response_type": null, "currency_symbol": "$", "quantity_symbol": "#", "melt": 1.0}}, {"model": "economy.simulation", "pk": 8, "fields": {"user": 1, "name": "SR two production goods", "time_stamp": 0, "state": "TEMPLATE", "periods_per_year": 1, "population_growth_rate": 1.0, "investment_ratio": 1.0, "labour_supply_response": "UNDEFINED", "price_response_type": "UNDEFINED", "melt_response_type": null, "currency_symbol": "$", "quantity_symbol": "#", "melt": 1.0}}]
+[
+  {
+    "model": "economy.simulation",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "name": "Simple Reproduction",
+      "time_stamp": 0,
+      "state": "TEMPLATE",
+      "periods_per_year": 1,
+      "population_growth_rate": 1.0,
+      "investment_ratio": 1.0,
+      "labour_supply_response": "UNDEFINED",
+      "price_response_type": "UNDEFINED",
+      "melt_response_type": null,
+      "currency_symbol": "$",
+      "quantity_symbol": "#",
+      "melt": 1.0
+    }
+  },
+  {
+    "model": "economy.simulation",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "name": "SR with lower MELT",
+      "time_stamp": 0,
+      "state": "TEMPLATE",
+      "periods_per_year": 1,
+      "population_growth_rate": 1.0,
+      "investment_ratio": 1.0,
+      "labour_supply_response": "UNDEFINED",
+      "price_response_type": "UNDEFINED",
+      "melt_response_type": null,
+      "currency_symbol": "$",
+      "quantity_symbol": "#",
+      "melt": 1.0
+    }
+  },
+  {
+    "model": "economy.simulation",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "name": "SR with halved period",
+      "time_stamp": 0,
+      "state": "TEMPLATE",
+      "periods_per_year": 1,
+      "population_growth_rate": 1.0,
+      "investment_ratio": 1.0,
+      "labour_supply_response": "UNDEFINED",
+      "price_response_type": "UNDEFINED",
+      "melt_response_type": null,
+      "currency_symbol": "$",
+      "quantity_symbol": "#",
+      "melt": 1.0
+    }
+  },
+  {
+    "model": "economy.simulation",
+    "pk": 4,
+    "fields": {
+      "user": 1,
+      "name": "SR two consumption goods",
+      "time_stamp": 0,
+      "state": "TEMPLATE",
+      "periods_per_year": 1,
+      "population_growth_rate": 1.0,
+      "investment_ratio": 1.0,
+      "labour_supply_response": "UNDEFINED",
+      "price_response_type": "UNDEFINED",
+      "melt_response_type": null,
+      "currency_symbol": "$",
+      "quantity_symbol": "#",
+      "melt": 1.0
+    }
+  },
+  {
+    "model": "economy.simulation",
+    "pk": 5,
+    "fields": {
+      "user": 1,
+      "name": "Expanded Reproduction",
+      "time_stamp": 0,
+      "state": "TEMPLATE",
+      "periods_per_year": 1,
+      "population_growth_rate": 1.0,
+      "investment_ratio": 1.0,
+      "labour_supply_response": "UNDEFINED",
+      "price_response_type": "UNDEFINED",
+      "melt_response_type": null,
+      "currency_symbol": "$",
+      "quantity_symbol": "#",
+      "melt": 1.0
+    }
+  },
+  {
+    "model": "economy.simulation",
+    "pk": 6,
+    "fields": {
+      "user": 1,
+      "name": "SR with equalisation",
+      "time_stamp": 0,
+      "state": "TEMPLATE",
+      "periods_per_year": 1,
+      "population_growth_rate": 1.0,
+      "investment_ratio": 1.0,
+      "labour_supply_response": "UNDEFINED",
+      "price_response_type": "UNDEFINED",
+      "melt_response_type": null,
+      "currency_symbol": "$",
+      "quantity_symbol": "#",
+      "melt": 1.0
+    }
+  },
+  {
+    "model": "economy.simulation",
+    "pk": 7,
+    "fields": {
+      "user": 1,
+      "name": "Three-sector Dynamic",
+      "time_stamp": 0,
+      "state": "TEMPLATE",
+      "periods_per_year": 1,
+      "population_growth_rate": 1.0,
+      "investment_ratio": 1.0,
+      "labour_supply_response": "UNDEFINED",
+      "price_response_type": "UNDEFINED",
+      "melt_response_type": null,
+      "currency_symbol": "$",
+      "quantity_symbol": "#",
+      "melt": 1.0
+    }
+  },
+  {
+    "model": "economy.simulation",
+    "pk": 8,
+    "fields": {
+      "user": 1,
+      "name": "SR two production goods",
+      "time_stamp": 0,
+      "state": "TEMPLATE",
+      "periods_per_year": 1,
+      "population_growth_rate": 1.0,
+      "investment_ratio": 1.0,
+      "labour_supply_response": "UNDEFINED",
+      "price_response_type": "UNDEFINED",
+      "melt_response_type": null,
+      "currency_symbol": "$",
+      "quantity_symbol": "#",
+      "melt": 1.0
+    }
+  }
+]

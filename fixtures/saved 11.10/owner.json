@@ -1,0 +1,290 @@
+[
+    {
+        "model": "economy.owner",
+        "pk": 1,
+        "fields": {
+            "name": "Department I",
+            "commodity": 3
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 2,
+        "fields": {
+            "name": "Department II",
+            "commodity": 1
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 3,
+        "fields": {
+            "name": "Department II",
+            "commodity": 5
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 4,
+        "fields": {
+            "name": "Department I",
+            "commodity": 7
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 5,
+        "fields": {
+            "name": "Consumption",
+            "commodity": 9
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 6,
+        "fields": {
+            "name": "Means of Production",
+            "commodity": 11
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 7,
+        "fields": {
+            "name": "Department I",
+            "commodity": 15
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 8,
+        "fields": {
+            "name": "Department IIa",
+            "commodity": 17
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 9,
+        "fields": {
+            "name": "Department IIb",
+            "commodity": 14
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 10,
+        "fields": {
+            "name": "Consumption",
+            "commodity": 18
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 11,
+        "fields": {
+            "name": "Means of Production",
+            "commodity": 20
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 12,
+        "fields": {
+            "name": "Department I",
+            "commodity": 24
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 13,
+        "fields": {
+            "name": "Department II",
+            "commodity": 22
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 14,
+        "fields": {
+            "name": "Consumption",
+            "commodity": 27
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 15,
+        "fields": {
+            "name": "Circulating",
+            "commodity": 26
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 16,
+        "fields": {
+            "name": "Fixed",
+            "commodity": 28
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 17,
+        "fields": {
+            "name": "Department Ia",
+            "commodity": 32
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 18,
+        "fields": {
+            "name": "Department II",
+            "commodity": 31
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 19,
+        "fields": {
+            "name": "Department Ib",
+            "commodity": 35
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 20,
+        "fields": {
+            "name": "Capitalists",
+            "commodity": 37
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 21,
+        "fields": {
+            "name": "Workers",
+            "commodity": 2
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 22,
+        "fields": {
+            "name": "Capitalists",
+            "commodity": 38
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 23,
+        "fields": {
+            "name": "Workers",
+            "commodity": 6
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 24,
+        "fields": {
+            "name": "Capitalists",
+            "commodity": 39
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 25,
+        "fields": {
+            "name": "Workers",
+            "commodity": 10
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 26,
+        "fields": {
+            "name": "Capitalists",
+            "commodity": 40
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 27,
+        "fields": {
+            "name": "Workers",
+            "commodity": 13
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 28,
+        "fields": {
+            "name": "Capitalists",
+            "commodity": 41
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 29,
+        "fields": {
+            "name": "Workers",
+            "commodity": 19
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 30,
+        "fields": {
+            "name": "Capitalists",
+            "commodity": 42
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 31,
+        "fields": {
+            "name": "Workers",
+            "commodity": 23
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 32,
+        "fields": {
+            "name": "Bankers",
+            "commodity": null
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 33,
+        "fields": {
+            "name": "Capitalists",
+            "commodity": 43
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 34,
+        "fields": {
+            "name": "Workers",
+            "commodity": 29
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 35,
+        "fields": {
+            "name": "Capitalists",
+            "commodity": 44
+        }
+    },
+    {
+        "model": "economy.owner",
+        "pk": 36,
+        "fields": {
+            "name": "Workers",
+            "commodity": 33
+        }
+    }
+]

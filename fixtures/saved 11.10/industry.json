@@ -4,7 +4,6 @@
     "pk": 1,
     "fields": {
       "simulation": 1,
-      "time_stamp": 0,
       "output_scale": 6000,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -19,7 +18,6 @@
     "pk": 2,
     "fields": {
       "simulation": 1,
-      "time_stamp": 0,
       "output_scale": 3000,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -34,7 +32,6 @@
     "pk": 3,
     "fields": {
       "simulation": 2,
-      "time_stamp": 0,
       "output_scale": 3000,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -49,7 +46,6 @@
     "pk": 4,
     "fields": {
       "simulation": 2,
-      "time_stamp": 0,
       "output_scale": 6000,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -64,7 +60,6 @@
     "pk": 5,
     "fields": {
       "simulation": 3,
-      "time_stamp": 0,
       "output_scale": 1500,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -79,7 +74,6 @@
     "pk": 6,
     "fields": {
       "simulation": 3,
-      "time_stamp": 0,
       "output_scale": 3000,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -94,7 +88,6 @@
     "pk": 7,
     "fields": {
       "simulation": 4,
-      "time_stamp": 0,
       "output_scale": 6000,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -109,7 +102,6 @@
     "pk": 8,
     "fields": {
       "simulation": 4,
-      "time_stamp": 0,
       "output_scale": 2400,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -124,7 +116,6 @@
     "pk": 9,
     "fields": {
       "simulation": 4,
-      "time_stamp": 0,
       "output_scale": 600,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -139,7 +130,6 @@
     "pk": 10,
     "fields": {
       "simulation": 5,
-      "time_stamp": 0,
       "output_scale": 3000,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -154,7 +144,6 @@
     "pk": 11,
     "fields": {
       "simulation": 5,
-      "time_stamp": 0,
       "output_scale": 6000,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -169,7 +158,6 @@
     "pk": 12,
     "fields": {
       "simulation": 6,
-      "time_stamp": 0,
       "output_scale": 6000,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -184,7 +172,6 @@
     "pk": 13,
     "fields": {
       "simulation": 6,
-      "time_stamp": 0,
       "output_scale": 6000,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -199,7 +186,6 @@
     "pk": 14,
     "fields": {
       "simulation": 7,
-      "time_stamp": 0,
       "output_scale": 200,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -214,7 +200,6 @@
     "pk": 15,
     "fields": {
       "simulation": 7,
-      "time_stamp": 0,
       "output_scale": 500,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -229,7 +214,6 @@
     "pk": 16,
     "fields": {
       "simulation": 7,
-      "time_stamp": 0,
       "output_scale": 500,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -244,7 +228,6 @@
     "pk": 17,
     "fields": {
       "simulation": 8,
-      "time_stamp": 0,
       "output_scale": 3000,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -259,7 +242,6 @@
     "pk": 18,
     "fields": {
       "simulation": 8,
-      "time_stamp": 0,
       "output_scale": 3000,
       "output_growth_rate": 0,
       "initial_capital": 0.0,
@@ -274,7 +256,6 @@
     "pk": 19,
     "fields": {
       "simulation": 8,
-      "time_stamp": 0,
       "output_scale": 3000,
       "output_growth_rate": 0,
       "initial_capital": 0.0,

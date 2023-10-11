@@ -19,7 +19,7 @@ def set_stock_names():
         stock.save()
     #little test
 
-
+# Doesn't work - use psq script 'dumpdb.ps1'
 def dumpdb():
     call_command('dumpdata', 'economy.simulation', '>simulation.json')
     call_command('dumpdata', 'economy.commodity', '>commodity.json')

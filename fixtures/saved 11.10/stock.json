@@ -5,7 +5,6 @@
         "fields": {
             "name": "Department II-Means of Production Production",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 3,
             "usage_type": "Production",
             "owner": 2,
@@ -23,7 +22,6 @@
         "fields": {
             "name": "Capitalists-Consumption Consumption",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 1,
             "usage_type": "Consumption",
             "owner": 20,
@@ -41,7 +39,6 @@
         "fields": {
             "name": "Capitalists-Money Money",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 4,
             "usage_type": "Money",
             "owner": 20,
@@ -59,7 +56,6 @@
         "fields": {
             "name": "Department II-Labour Power Production",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 2,
             "usage_type": "Production",
             "owner": 2,
@@ -77,7 +73,6 @@
         "fields": {
             "name": "Department I-Means of Production Sales",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 3,
             "usage_type": "Sales",
             "owner": 1,
@@ -95,7 +90,6 @@
         "fields": {
             "name": "Department I-Money Money",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 4,
             "usage_type": "Money",
             "owner": 1,
@@ -113,7 +107,6 @@
         "fields": {
             "name": "Department II-Money Money",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 4,
             "usage_type": "Money",
             "owner": 2,
@@ -131,7 +124,6 @@
         "fields": {
             "name": "Department I-Labour Power Production",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 2,
             "usage_type": "Production",
             "owner": 1,
@@ -149,7 +141,6 @@
         "fields": {
             "name": "Department I-Means of Production Production",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 3,
             "usage_type": "Production",
             "owner": 1,
@@ -167,7 +158,6 @@
         "fields": {
             "name": "Department II-Consumption Sales",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 1,
             "usage_type": "Sales",
             "owner": 2,
@@ -185,7 +175,6 @@
         "fields": {
             "name": "Workers-Consumption Consumption",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 1,
             "usage_type": "Consumption",
             "owner": 21,
@@ -203,7 +192,6 @@
         "fields": {
             "name": "Workers-Money Money",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 4,
             "usage_type": "Money",
             "owner": 21,
@@ -221,7 +209,6 @@
         "fields": {
             "name": "Workers-Labour Power Sales",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 2,
             "usage_type": "Sales",
             "owner": 21,
@@ -239,7 +226,6 @@
         "fields": {
             "name": "Capitalists-Labour Power Sales",
             "simulation": 1,
-            "time_stamp": 0,
             "commodity": 2,
             "usage_type": "Sales",
             "owner": 20,
@@ -257,7 +243,6 @@
         "fields": {
             "name": "Capitalists-Consumption Consumption",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 5,
             "usage_type": "Consumption",
             "owner": 22,
@@ -275,7 +260,6 @@
         "fields": {
             "name": "Capitalists-Money Money",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 8,
             "usage_type": "Money",
             "owner": 22,
@@ -293,7 +277,6 @@
         "fields": {
             "name": "Department I-Labour Power Production",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 6,
             "usage_type": "Production",
             "owner": 4,
@@ -311,7 +294,6 @@
         "fields": {
             "name": "Department II-Labour Power Production",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 6,
             "usage_type": "Production",
             "owner": 3,
@@ -329,7 +311,6 @@
         "fields": {
             "name": "Department I-Means of Production Sales",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 7,
             "usage_type": "Sales",
             "owner": 4,
@@ -347,7 +328,6 @@
         "fields": {
             "name": "Department I-Means of Production Production",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 7,
             "usage_type": "Production",
             "owner": 4,
@@ -365,7 +345,6 @@
         "fields": {
             "name": "Department II-Money Money",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 8,
             "usage_type": "Money",
             "owner": 3,
@@ -383,7 +362,6 @@
         "fields": {
             "name": "Department I-Money Money",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 8,
             "usage_type": "Money",
             "owner": 4,
@@ -401,7 +379,6 @@
         "fields": {
             "name": "Department II-Means of Production Production",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 7,
             "usage_type": "Production",
             "owner": 3,
@@ -419,7 +396,6 @@
         "fields": {
             "name": "Department II-Consumption Sales",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 5,
             "usage_type": "Sales",
             "owner": 3,
@@ -437,7 +413,6 @@
         "fields": {
             "name": "Workers-Consumption Consumption",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 5,
             "usage_type": "Consumption",
             "owner": 23,
@@ -455,7 +430,6 @@
         "fields": {
             "name": "Workers-Money Money",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 8,
             "usage_type": "Money",
             "owner": 23,
@@ -473,7 +447,6 @@
         "fields": {
             "name": "Workers-Labour Power Sales",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 6,
             "usage_type": "Sales",
             "owner": 23,
@@ -491,7 +464,6 @@
         "fields": {
             "name": "Capitalists-Labour Power Sales",
             "simulation": 2,
-            "time_stamp": 0,
             "commodity": 6,
             "usage_type": "Sales",
             "owner": 22,
@@ -509,7 +481,6 @@
         "fields": {
             "name": "Capitalists-Consumption Consumption",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 9,
             "usage_type": "Consumption",
             "owner": 24,
@@ -527,7 +498,6 @@
         "fields": {
             "name": "Capitalists-Money Money",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 12,
             "usage_type": "Money",
             "owner": 24,
@@ -545,7 +515,6 @@
         "fields": {
             "name": "Consumption-Money Money",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 12,
             "usage_type": "Money",
             "owner": 5,
@@ -563,7 +532,6 @@
         "fields": {
             "name": "Means of Production-Money Money",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 12,
             "usage_type": "Money",
             "owner": 6,
@@ -581,7 +549,6 @@
         "fields": {
             "name": "Consumption-Means of Production Production",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 11,
             "usage_type": "Production",
             "owner": 5,
@@ -599,7 +566,6 @@
         "fields": {
             "name": "Means of Production-Means of Production Production",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 11,
             "usage_type": "Production",
             "owner": 6,
@@ -617,7 +583,6 @@
         "fields": {
             "name": "Means of Production-Labour Power Production",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 10,
             "usage_type": "Production",
             "owner": 6,
@@ -635,7 +600,6 @@
         "fields": {
             "name": "Consumption-Labour Power Production",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 10,
             "usage_type": "Production",
             "owner": 5,
@@ -653,7 +617,6 @@
         "fields": {
             "name": "Means of Production-Means of Production Sales",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 11,
             "usage_type": "Sales",
             "owner": 6,
@@ -671,7 +634,6 @@
         "fields": {
             "name": "Consumption-Consumption Sales",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 9,
             "usage_type": "Sales",
             "owner": 5,
@@ -689,7 +651,6 @@
         "fields": {
             "name": "Workers-Consumption Consumption",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 9,
             "usage_type": "Consumption",
             "owner": 25,
@@ -707,7 +668,6 @@
         "fields": {
             "name": "Workers-Money Money",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 12,
             "usage_type": "Money",
             "owner": 25,
@@ -725,7 +685,6 @@
         "fields": {
             "name": "Workers-Labour Power Sales",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 10,
             "usage_type": "Sales",
             "owner": 25,
@@ -743,7 +702,6 @@
         "fields": {
             "name": "Capitalists-Labour Power Sales",
             "simulation": 3,
-            "time_stamp": 0,
             "commodity": 10,
             "usage_type": "Sales",
             "owner": 24,
@@ -761,7 +719,6 @@
         "fields": {
             "name": "Capitalists-Luxuries Consumption",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 14,
             "usage_type": "Consumption",
             "owner": 26,
@@ -779,7 +736,6 @@
         "fields": {
             "name": "Capitalists-Money Money",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 16,
             "usage_type": "Money",
             "owner": 26,
@@ -797,7 +753,6 @@
         "fields": {
             "name": "Capitalists-Necessities Consumption",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 17,
             "usage_type": "Consumption",
             "owner": 26,
@@ -815,7 +770,6 @@
         "fields": {
             "name": "Department IIa-Labour Power Production",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 13,
             "usage_type": "Production",
             "owner": 8,
@@ -833,7 +787,6 @@
         "fields": {
             "name": "Department IIb-Luxuries Sales",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 14,
             "usage_type": "Sales",
             "owner": 9,
@@ -851,7 +804,6 @@
         "fields": {
             "name": "Department IIb-Means of Production Production",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 15,
             "usage_type": "Production",
             "owner": 9,
@@ -869,7 +821,6 @@
         "fields": {
             "name": "Department IIa-Means of Production Production",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 15,
             "usage_type": "Production",
             "owner": 8,
@@ -887,7 +838,6 @@
         "fields": {
             "name": "Department I-Means of Production Sales",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 15,
             "usage_type": "Sales",
             "owner": 7,
@@ -905,7 +855,6 @@
         "fields": {
             "name": "Department I-Labour Power Production",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 13,
             "usage_type": "Production",
             "owner": 7,
@@ -923,7 +872,6 @@
         "fields": {
             "name": "Department I-Means of Production Production",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 15,
             "usage_type": "Production",
             "owner": 7,
@@ -941,7 +889,6 @@
         "fields": {
             "name": "Department I-Money Money",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 16,
             "usage_type": "Money",
             "owner": 7,
@@ -959,7 +906,6 @@
         "fields": {
             "name": "Department IIa-Money Money",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 16,
             "usage_type": "Money",
             "owner": 8,
@@ -977,7 +923,6 @@
         "fields": {
             "name": "Department IIa-Necessities Sales",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 17,
             "usage_type": "Sales",
             "owner": 8,
@@ -995,7 +940,6 @@
         "fields": {
             "name": "Department IIb-Labour Power Production",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 13,
             "usage_type": "Production",
             "owner": 9,
@@ -1013,7 +957,6 @@
         "fields": {
             "name": "Department IIb-Money Money",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 16,
             "usage_type": "Money",
             "owner": 9,
@@ -1031,7 +974,6 @@
         "fields": {
             "name": "Workers-Money Money",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 16,
             "usage_type": "Money",
             "owner": 27,
@@ -1049,7 +991,6 @@
         "fields": {
             "name": "Workers-Labour Power Sales",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 13,
             "usage_type": "Sales",
             "owner": 27,
@@ -1067,7 +1008,6 @@
         "fields": {
             "name": "Workers-Luxuries Consumption",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 14,
             "usage_type": "Consumption",
             "owner": 27,
@@ -1085,7 +1025,6 @@
         "fields": {
             "name": "Workers-Necessities Consumption",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 17,
             "usage_type": "Consumption",
             "owner": 27,
@@ -1103,7 +1042,6 @@
         "fields": {
             "name": "Capitalists-Labour Power Sales",
             "simulation": 4,
-            "time_stamp": 0,
             "commodity": 13,
             "usage_type": "Sales",
             "owner": 26,
@@ -1121,7 +1059,6 @@
         "fields": {
             "name": "Capitalists-Consumption Consumption",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 18,
             "usage_type": "Consumption",
             "owner": 28,
@@ -1139,7 +1076,6 @@
         "fields": {
             "name": "Capitalists-Money Money",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 21,
             "usage_type": "Money",
             "owner": 28,
@@ -1157,7 +1093,6 @@
         "fields": {
             "name": "Means of Production-Means of Production Sales",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 20,
             "usage_type": "Sales",
             "owner": 11,
@@ -1175,7 +1110,6 @@
         "fields": {
             "name": "Means of Production-Means of Production Production",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 20,
             "usage_type": "Production",
             "owner": 11,
@@ -1193,7 +1127,6 @@
         "fields": {
             "name": "Means of Production-Money Money",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 21,
             "usage_type": "Money",
             "owner": 11,
@@ -1211,7 +1144,6 @@
         "fields": {
             "name": "Consumption-Means of Production Production",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 20,
             "usage_type": "Production",
             "owner": 10,
@@ -1229,7 +1161,6 @@
         "fields": {
             "name": "Consumption-Labour Power Production",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 19,
             "usage_type": "Production",
             "owner": 10,
@@ -1247,7 +1178,6 @@
         "fields": {
             "name": "Means of Production-Labour Power Production",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 19,
             "usage_type": "Production",
             "owner": 11,
@@ -1265,7 +1195,6 @@
         "fields": {
             "name": "Consumption-Money Money",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 21,
             "usage_type": "Money",
             "owner": 10,
@@ -1283,7 +1212,6 @@
         "fields": {
             "name": "Consumption-Consumption Sales",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 18,
             "usage_type": "Sales",
             "owner": 10,
@@ -1301,7 +1229,6 @@
         "fields": {
             "name": "Workers-Consumption Consumption",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 18,
             "usage_type": "Consumption",
             "owner": 29,
@@ -1319,7 +1246,6 @@
         "fields": {
             "name": "Workers-Labour Power Sales",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 19,
             "usage_type": "Sales",
             "owner": 29,
@@ -1337,7 +1263,6 @@
         "fields": {
             "name": "Workers-Money Money",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 21,
             "usage_type": "Money",
             "owner": 29,
@@ -1355,7 +1280,6 @@
         "fields": {
             "name": "Capitalists-Labour Power Sales",
             "simulation": 5,
-            "time_stamp": 0,
             "commodity": 19,
             "usage_type": "Sales",
             "owner": 28,
@@ -1373,7 +1297,6 @@
         "fields": {
             "name": "Capitalists-Consumption Consumption",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 22,
             "usage_type": "Consumption",
             "owner": 30,
@@ -1391,7 +1314,6 @@
         "fields": {
             "name": "Capitalists-Money Money",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 25,
             "usage_type": "Money",
             "owner": 30,
@@ -1409,7 +1331,6 @@
         "fields": {
             "name": "Department I-Means of Production Sales",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 24,
             "usage_type": "Sales",
             "owner": 12,
@@ -1427,7 +1348,6 @@
         "fields": {
             "name": "Department II-Money Money",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 25,
             "usage_type": "Money",
             "owner": 13,
@@ -1445,7 +1365,6 @@
         "fields": {
             "name": "Department I-Labour Power Production",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 23,
             "usage_type": "Production",
             "owner": 12,
@@ -1463,7 +1382,6 @@
         "fields": {
             "name": "Department II-Labour Power Production",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 23,
             "usage_type": "Production",
             "owner": 13,
@@ -1481,7 +1399,6 @@
         "fields": {
             "name": "Department I-Money Money",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 25,
             "usage_type": "Money",
             "owner": 12,
@@ -1499,7 +1416,6 @@
         "fields": {
             "name": "Department I-Means of Production Production",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 24,
             "usage_type": "Production",
             "owner": 12,
@@ -1517,7 +1433,6 @@
         "fields": {
             "name": "Department II-Means of Production Production",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 24,
             "usage_type": "Production",
             "owner": 13,
@@ -1535,7 +1450,6 @@
         "fields": {
             "name": "Department II-Consumption Sales",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 22,
             "usage_type": "Sales",
             "owner": 13,
@@ -1553,7 +1467,6 @@
         "fields": {
             "name": "Workers-Consumption Consumption",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 22,
             "usage_type": "Consumption",
             "owner": 31,
@@ -1571,7 +1484,6 @@
         "fields": {
             "name": "Workers-Money Money",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 25,
             "usage_type": "Money",
             "owner": 31,
@@ -1589,7 +1501,6 @@
         "fields": {
             "name": "Workers-Labour Power Sales",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 23,
             "usage_type": "Sales",
             "owner": 31,
@@ -1607,7 +1518,6 @@
         "fields": {
             "name": "Capitalists-Labour Power Sales",
             "simulation": 6,
-            "time_stamp": 0,
             "commodity": 23,
             "usage_type": "Sales",
             "owner": 30,
@@ -1625,7 +1535,6 @@
         "fields": {
             "name": "Capitalists-Consumption Consumption",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 27,
             "usage_type": "Consumption",
             "owner": 33,
@@ -1643,7 +1552,6 @@
         "fields": {
             "name": "Capitalists-Money Money",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 30,
             "usage_type": "Money",
             "owner": 33,
@@ -1661,7 +1569,6 @@
         "fields": {
             "name": "Bankers-Consumption Consumption",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 27,
             "usage_type": "Consumption",
             "owner": 32,
@@ -1679,7 +1586,6 @@
         "fields": {
             "name": "Fixed-Money Money",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 30,
             "usage_type": "Money",
             "owner": 16,
@@ -1697,7 +1603,6 @@
         "fields": {
             "name": "Bankers-Money Money",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 30,
             "usage_type": "Money",
             "owner": 32,
@@ -1715,7 +1620,6 @@
         "fields": {
             "name": "Consumption-Money Money",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 30,
             "usage_type": "Money",
             "owner": 14,
@@ -1733,7 +1637,6 @@
         "fields": {
             "name": "Circulating-Circulating Production",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 26,
             "usage_type": "Production",
             "owner": 15,
@@ -1751,7 +1654,6 @@
         "fields": {
             "name": "Circulating-Labour Power Production",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 29,
             "usage_type": "Production",
             "owner": 15,
@@ -1769,7 +1671,6 @@
         "fields": {
             "name": "Bankers-Labour Power Sales",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 29,
             "usage_type": "Sales",
             "owner": 32,
@@ -1787,7 +1688,6 @@
         "fields": {
             "name": "Circulating-Circulating Sales",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 26,
             "usage_type": "Sales",
             "owner": 15,
@@ -1805,7 +1705,6 @@
         "fields": {
             "name": "Circulating-Fixed Production",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 28,
             "usage_type": "Production",
             "owner": 15,
@@ -1823,7 +1722,6 @@
         "fields": {
             "name": "Consumption-Circulating Production",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 26,
             "usage_type": "Production",
             "owner": 14,
@@ -1841,7 +1739,6 @@
         "fields": {
             "name": "Circulating-Money Money",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 30,
             "usage_type": "Money",
             "owner": 15,
@@ -1859,7 +1756,6 @@
         "fields": {
             "name": "Consumption-Fixed Production",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 28,
             "usage_type": "Production",
             "owner": 14,
@@ -1877,7 +1773,6 @@
         "fields": {
             "name": "Consumption-Labour Power Production",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 29,
             "usage_type": "Production",
             "owner": 14,
@@ -1895,7 +1790,6 @@
         "fields": {
             "name": "Fixed-Circulating Production",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 26,
             "usage_type": "Production",
             "owner": 16,
@@ -1913,7 +1807,6 @@
         "fields": {
             "name": "Fixed-Fixed Production",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 28,
             "usage_type": "Production",
             "owner": 16,
@@ -1931,7 +1824,6 @@
         "fields": {
             "name": "Workers-Consumption Consumption",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 27,
             "usage_type": "Consumption",
             "owner": 34,
@@ -1949,7 +1841,6 @@
         "fields": {
             "name": "Fixed-Labour Power Production",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 29,
             "usage_type": "Production",
             "owner": 16,
@@ -1967,7 +1858,6 @@
         "fields": {
             "name": "Fixed-Fixed Sales",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 28,
             "usage_type": "Sales",
             "owner": 16,
@@ -1985,7 +1875,6 @@
         "fields": {
             "name": "Consumption-Consumption Sales",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 27,
             "usage_type": "Sales",
             "owner": 14,
@@ -2003,7 +1892,6 @@
         "fields": {
             "name": "Workers-Money Money",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 30,
             "usage_type": "Money",
             "owner": 34,
@@ -2021,7 +1909,6 @@
         "fields": {
             "name": "Workers-Labour Power Sales",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 29,
             "usage_type": "Sales",
             "owner": 34,
@@ -2039,7 +1926,6 @@
         "fields": {
             "name": "Capitalists-Labour Power Sales",
             "simulation": 7,
-            "time_stamp": 0,
             "commodity": 29,
             "usage_type": "Sales",
             "owner": 33,
@@ -2057,7 +1943,6 @@
         "fields": {
             "name": "Capitalists-Consumption Consumption",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 31,
             "usage_type": "Consumption",
             "owner": 35,
@@ -2075,7 +1960,6 @@
         "fields": {
             "name": "Capitalists-Money Money",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 34,
             "usage_type": "Money",
             "owner": 35,
@@ -2093,7 +1977,6 @@
         "fields": {
             "name": "Capitalists-Labour Power Sales",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 33,
             "usage_type": "Sales",
             "owner": 35,
@@ -2111,7 +1994,6 @@
         "fields": {
             "name": "Department Ia-Raw Materials Production",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 35,
             "usage_type": "Production",
             "owner": 17,
@@ -2129,7 +2011,6 @@
         "fields": {
             "name": "Department Ia-Labour Power Production",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 33,
             "usage_type": "Production",
             "owner": 17,
@@ -2147,7 +2028,6 @@
         "fields": {
             "name": "Department Ia-Money Money",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 34,
             "usage_type": "Money",
             "owner": 17,
@@ -2165,7 +2045,6 @@
         "fields": {
             "name": "Department Ia-Fixed Production",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 32,
             "usage_type": "Production",
             "owner": 17,
@@ -2183,7 +2062,6 @@
         "fields": {
             "name": "Department Ia-Fixed Sales",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 32,
             "usage_type": "Sales",
             "owner": 17,
@@ -2201,7 +2079,6 @@
         "fields": {
             "name": "Department Ib-Raw Materials Sales",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 35,
             "usage_type": "Sales",
             "owner": 19,
@@ -2219,7 +2096,6 @@
         "fields": {
             "name": "Department Ib-Money Money",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 34,
             "usage_type": "Money",
             "owner": 19,
@@ -2237,7 +2113,6 @@
         "fields": {
             "name": "Department Ib-Fixed Production",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 32,
             "usage_type": "Production",
             "owner": 19,
@@ -2255,7 +2130,6 @@
         "fields": {
             "name": "Department Ib-Raw Materials Production",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 35,
             "usage_type": "Production",
             "owner": 19,
@@ -2273,7 +2147,6 @@
         "fields": {
             "name": "Department Ib-Labour Power Production",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 33,
             "usage_type": "Production",
             "owner": 19,
@@ -2291,7 +2164,6 @@
         "fields": {
             "name": "Department II-Money Money",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 34,
             "usage_type": "Money",
             "owner": 18,
@@ -2309,7 +2181,6 @@
         "fields": {
             "name": "Department II-Labour Power Production",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 33,
             "usage_type": "Production",
             "owner": 18,
@@ -2327,7 +2198,6 @@
         "fields": {
             "name": "Department II-Consumption Sales",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 31,
             "usage_type": "Sales",
             "owner": 18,
@@ -2345,7 +2215,6 @@
         "fields": {
             "name": "Department II-Fixed Production",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 32,
             "usage_type": "Production",
             "owner": 18,
@@ -2363,7 +2232,6 @@
         "fields": {
             "name": "Department II-Raw Materials Production",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 35,
             "usage_type": "Production",
             "owner": 18,
@@ -2381,7 +2249,6 @@
         "fields": {
             "name": "Workers-Consumption Consumption",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 31,
             "usage_type": "Consumption",
             "owner": 36,
@@ -2399,7 +2266,6 @@
         "fields": {
             "name": "Workers-Money Money",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 34,
             "usage_type": "Money",
             "owner": 36,
@@ -2417,7 +2283,6 @@
         "fields": {
             "name": "Workers-Labour Power Sales",
             "simulation": 8,
-            "time_stamp": 0,
             "commodity": 33,
             "usage_type": "Sales",
             "owner": 36,

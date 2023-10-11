@@ -4,7 +4,6 @@
     "pk": 1,
     "fields": {
       "name": "Department I",
-      "simulation": 1,
       "commodity": 3
     }
   },
@@ -13,7 +12,6 @@
     "pk": 2,
     "fields": {
       "name": "Department II",
-      "simulation": 1,
       "commodity": 1
     }
   },
@@ -22,7 +20,6 @@
     "pk": 3,
     "fields": {
       "name": "Department II",
-      "simulation": 2,
       "commodity": 5
     }
   },
@@ -31,7 +28,6 @@
     "pk": 4,
     "fields": {
       "name": "Department I",
-      "simulation": 2,
       "commodity": 7
     }
   },
@@ -40,7 +36,6 @@
     "pk": 5,
     "fields": {
       "name": "Consumption",
-      "simulation": 3,
       "commodity": 9
     }
   },
@@ -49,7 +44,6 @@
     "pk": 6,
     "fields": {
       "name": "Means of Production",
-      "simulation": 3,
       "commodity": 11
     }
   },
@@ -58,7 +52,6 @@
     "pk": 7,
     "fields": {
       "name": "Department I",
-      "simulation": 4,
       "commodity": 15
     }
   },
@@ -67,7 +60,6 @@
     "pk": 8,
     "fields": {
       "name": "Department IIa",
-      "simulation": 4,
       "commodity": 17
     }
   },
@@ -76,7 +68,6 @@
     "pk": 9,
     "fields": {
       "name": "Department IIb",
-      "simulation": 4,
       "commodity": 14
     }
   },
@@ -85,7 +76,6 @@
     "pk": 10,
     "fields": {
       "name": "Consumption",
-      "simulation": 5,
       "commodity": 18
     }
   },
@@ -94,7 +84,6 @@
     "pk": 11,
     "fields": {
       "name": "Means of Production",
-      "simulation": 5,
       "commodity": 20
     }
   },
@@ -103,7 +92,6 @@
     "pk": 12,
     "fields": {
       "name": "Department I",
-      "simulation": 6,
       "commodity": 24
     }
   },
@@ -112,7 +100,6 @@
     "pk": 13,
     "fields": {
       "name": "Department II",
-      "simulation": 6,
       "commodity": 22
     }
   },
@@ -121,7 +108,6 @@
     "pk": 14,
     "fields": {
       "name": "Consumption",
-      "simulation": 7,
       "commodity": 27
     }
   },
@@ -130,7 +116,6 @@
     "pk": 15,
     "fields": {
       "name": "Circulating",
-      "simulation": 7,
       "commodity": 26
     }
   },
@@ -139,7 +124,6 @@
     "pk": 16,
     "fields": {
       "name": "Fixed",
-      "simulation": 7,
       "commodity": 28
     }
   },
@@ -148,7 +132,6 @@
     "pk": 17,
     "fields": {
       "name": "Department Ia",
-      "simulation": 8,
       "commodity": 32
     }
   },
@@ -157,7 +140,6 @@
     "pk": 18,
     "fields": {
       "name": "Department II",
-      "simulation": 8,
       "commodity": 31
     }
   },
@@ -166,7 +148,6 @@
     "pk": 19,
     "fields": {
       "name": "Department Ib",
-      "simulation": 8,
       "commodity": 35
     }
   },
@@ -175,7 +156,6 @@
     "pk": 20,
     "fields": {
       "name": "Capitalists",
-      "simulation": 1,
       "commodity": 37
     }
   },
@@ -184,7 +164,6 @@
     "pk": 21,
     "fields": {
       "name": "Workers",
-      "simulation": 1,
       "commodity": 2
     }
   },
@@ -193,7 +172,6 @@
     "pk": 22,
     "fields": {
       "name": "Capitalists",
-      "simulation": 2,
       "commodity": 38
     }
   },
@@ -202,7 +180,6 @@
     "pk": 23,
     "fields": {
       "name": "Workers",
-      "simulation": 2,
       "commodity": 6
     }
   },
@@ -211,7 +188,6 @@
     "pk": 24,
     "fields": {
       "name": "Capitalists",
-      "simulation": 3,
       "commodity": 39
     }
   },
@@ -220,7 +196,6 @@
     "pk": 25,
     "fields": {
       "name": "Workers",
-      "simulation": 3,
       "commodity": 10
     }
   },
@@ -229,7 +204,6 @@
     "pk": 26,
     "fields": {
       "name": "Capitalists",
-      "simulation": 4,
       "commodity": 40
     }
   },
@@ -238,7 +212,6 @@
     "pk": 27,
     "fields": {
       "name": "Workers",
-      "simulation": 4,
       "commodity": 13
     }
   },
@@ -247,7 +220,6 @@
     "pk": 28,
     "fields": {
       "name": "Capitalists",
-      "simulation": 5,
       "commodity": 41
     }
   },
@@ -256,7 +228,6 @@
     "pk": 29,
     "fields": {
       "name": "Workers",
-      "simulation": 5,
       "commodity": 19
     }
   },
@@ -265,7 +236,6 @@
     "pk": 30,
     "fields": {
       "name": "Capitalists",
-      "simulation": 6,
       "commodity": 42
     }
   },
@@ -274,7 +244,6 @@
     "pk": 31,
     "fields": {
       "name": "Workers",
-      "simulation": 6,
       "commodity": 23
     }
   },
@@ -283,7 +252,6 @@
     "pk": 32,
     "fields": {
       "name": "Bankers",
-      "simulation": 7,
       "commodity": null
     }
   },
@@ -292,7 +260,6 @@
     "pk": 33,
     "fields": {
       "name": "Capitalists",
-      "simulation": 7,
       "commodity": 43
     }
   },
@@ -301,7 +268,6 @@
     "pk": 34,
     "fields": {
       "name": "Workers",
-      "simulation": 7,
       "commodity": 29
     }
   },
@@ -310,7 +276,6 @@
     "pk": 35,
     "fields": {
       "name": "Capitalists",
-      "simulation": 8,
       "commodity": 44
     }
   },
@@ -319,7 +284,6 @@
     "pk": 36,
     "fields": {
       "name": "Workers",
-      "simulation": 8,
       "commodity": 33
     }
   }
