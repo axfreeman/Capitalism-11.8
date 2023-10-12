@@ -28,10 +28,14 @@ class Simulation(models.Model):
     class Meta:ordering = ['pk'] 
     def __str__(self):return f'{self.name}({str(self.pk)})'
 
+    @property
+    def link(self): return f'<a href = "/simulations/{self.id}">{self.name}</a>'    
+
     #Make a deep clone of myself and all associated objects
     def clone(self,user):
-        print(f'The simulation {self.name} of type {self.state} owned by {self.user} is cloning itself at the request of user {user}')
-        report(self,1,f'cloning the simulation {self.name}')
+        print(f'The simulation {self.name} of type {self.state} and id {self.id} owned by {self.user} is cloning itself at the request of user {user}')
+        report(self,1,f'cloning the simulation {self.name} with id {self.id} and owner {self.user}')
+        old_id=self.id
 # Pick up the children of this simulation before cloning the simulation itself
         new_commodities=Commodity.objects.filter(simulation=self) 
 # Now clone the simulation so the new cloned objects can point to it
@@ -41,15 +45,20 @@ class Simulation(models.Model):
         self.pk=None
         self.save()
         print(f'created new simulation {self.name} of type {self.state} owned by {self.user} with time stamp {self.time_stamp}')
+        old_simulation=Simulation.objects.get(id=old_id)
+        new_time_stamp=self.time_stamp
+        print(f'old_self is now {old_simulation} and new_self is {self}')
 # clone the commodities first
         for commodity in new_commodities:
             commodity.pk=None
             commodity.simulation=self
-            commodity.time_stamp=self.time_stamp
+            commodity.time_stamp=new_time_stamp
             commodity.save()        
             print(f' Cloned commodity {commodity.name} for user {self.user}. ID is {commodity.pk} with time stamp {commodity.time_stamp}')
 # Now clone the children recursively
-        for commodity in new_commodities:
+        old_commodities=Commodity.objects.filter(simulation=old_simulation) # self has changed, so we have to rebuild this queryset
+        print(f'new_commodities is now {new_commodities} and old_commodities is now {old_commodities}')
+        for commodity in old_commodities:
             new_industries= Industry.objects.filter(commodity=commodity)
             new_social_classes=SocialClass.objects.filter(commodity=commodity)
             for industry in new_industries:
@@ -59,19 +68,20 @@ class Simulation(models.Model):
                 new_industry.id=None
                 new_industry.commodity=commodity 
                 new_industry.simulation=self
-                new_industry.time_stamp=self.time_stamp
+                new_industry.time_stamp=new_time_stamp
                 new_industry.save()                
-                print(f'  Cloned industry {new_industry.name} for user {self.user}. ID is {new_industry.pk}')
+                print(f'  Cloned industry {new_industry.name} for user {self.user}. ID is {new_industry.pk} and time stamp is {new_industry.time_stamp}')
                 for stock in new_stocks:
                     new_stock=copy.deepcopy(stock)
                     new_stock.pk=None
                     new_stock.id=None
+                    new_stock.time_stamp=new_time_stamp
                     new_stock.owner=new_industry
                     new_stock.simulation=self
                     new_stock.save()
                     # NOTE at this point we don't have the correct commodity object for the stock. 
                     # Instead, we have the commodity object of the old stock, which is one time_stamp behind
-                    print(f'   Cloned stock of {new_stock.commodity.name} of type {new_stock.usage_type} for industry {industry.name} with old ID {stock.id} and new ID {new_stock.id}' )
+                    print(f'   Cloned stock of {new_stock.commodity.name} of type {new_stock.usage_type} for industry {industry.name} with old ID {stock.id} and new ID {new_stock.id}. time_stamp is {new_stock.time_stamp}' )
             for social_class in new_social_classes:
                 new_stocks=Stock.objects.filter(owner=social_class)
                 new_social_class=copy.deepcopy(social_class)
@@ -79,25 +89,28 @@ class Simulation(models.Model):
                 new_social_class.id=None
                 new_social_class.commodity=commodity
                 new_social_class.simulation=self
+                new_social_class.time_stamp=new_time_stamp
                 new_social_class.save()                
-                print(f'  Cloned social class {new_social_class.name} for user {self.user}. ID is {new_social_class.id}')
+                print(f'  Cloned social class {new_social_class.name} for user {self.user}. ID is {new_social_class.id} and time_stamp is {new_social_class.time_stamp}')
                 for stock in new_stocks:
                    new_stock=copy.deepcopy(stock)
                    new_stock.pk=None
                    new_stock.id=None
+                   new_stock.time_stamp=new_time_stamp
                    new_stock.owner=new_social_class
                    new_stock.simulation=self
                    new_stock.save() 
-                   print(f'   Cloned stock of {new_stock.commodity.name} of type {new_stock.usage_type} for social class {social_class.name} with old ID {stock.id} and new ID {new_stock.id}')
+                   print(f'   Cloned stock of {new_stock.commodity.name} of type {new_stock.usage_type} for social class {social_class.name} with old ID {stock.id} new ID {new_stock.id} and time stamp {new_stock.time_stamp}')
 
 # NOW revisit all the stocks and set their commodity properly
-        for stock in Stock.objects.all():
-                                # old_stock=Stock.objects.get(name=new_stock.name,time_stamp=self.time_stamp-1)
-            old_commodity=stock.commodity # at this point, we havven't yet updated to the new commodity. We have to find it.
-            new_commodity=Commodity.objects.get(simulation=stock.simulation,name=old_commodity.name,time_stamp = stock.time_stamp)
+        for stock in Stock.objects.filter(time_stamp=new_time_stamp):
+            old_commodity=stock.commodity # at this point, we haven't yet updated to the new commodity. We have to find it.
+            print(f'looking for stock of commodity {old_commodity.name} for the stock called {stock.name}')
+            print(f'we also want the time_stamp to be {new_time_stamp} and the simulation to be {stock.simulation}')
+            new_commodity=Commodity.objects.get(simulation=self,name=old_commodity.name,time_stamp = new_time_stamp)
             stock.commodity=new_commodity
             stock.save()
-            print(f'updated the time stamp of the commodity of the stock called {stock.name} from {old_commodity.time_stamp} to {stock.commodity.time_stamp}')
+            print(f'updated the commodity of the stock called {stock.name} and its time stamp was changed from {old_commodity.time_stamp} to {stock.commodity.time_stamp}')
 
         return
     

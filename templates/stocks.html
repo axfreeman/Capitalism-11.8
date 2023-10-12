@@ -10,6 +10,7 @@
 
             <th> id </th>
             <th> simulation </th>
+            <th> time stamp</th>
             <th> Commodity </th>
             <th> Usage </th>
             <th> Owner </th>
@@ -30,7 +31,8 @@
             {% endif %}
 
             <td>{{ stock.id}} </td>
-            <td><a href ="/simulations/{{stock.simulation.id}}">{{ stock.simulation}}</a></td>
+            <td>{{ stock.simulation.link|safe}}</td>
+            <td>{{stock.time_stamp}}</td>
             <td><a href ="/commodities/{{stock.commodity.id}}">{{ stock.commodity.name}}</a> </td>
             <td>{{ stock.usage_type}} </td>
             <td>{{ stock.owner}} </td>

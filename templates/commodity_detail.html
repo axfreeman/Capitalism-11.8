@@ -10,39 +10,33 @@
       <thead>
       </thead>
       <tbody>
-        <tr> <td>Origin</td>
+
+        <tr> <td>Simulation</td>
+          <td> {{ commodity.simulation.link|safe}}</td>
+          <tr> <td>Time Stamp</td>
+            <td> {{ commodity.time_stamp}}</td>
+          <tr> <td>Origin</td>
           <td> {{ commodity.origin}}</td>
-          </td>
         <tr> <td>Usage</td>
           <td> {{ commodity.usage}}</td>
-          </td>
         <tr> <td>Size</td>
           <td> {{ commodity.size}}</td>
-          </td>
         <tr> <td>Total value (Unit Value)</td>
           <td> {{ commodity.total_value}} ({{ commodity.unit_value}}) </td>
-          </td>
         <tr> <td>Total price (Unit price)</td>
           <td> {{ commodity.total_price}} ({{ commodity.unit_price}})</td>
-          </td>
         <tr> <td>Turnover time</td>
           <td> {{ commodity.turnover_time}}</td>
-          </td>
         <tr> <td>Demand</td>
           <td> {{ commodity.demand}}</td>
-          </td>
         <tr> <td>Supply</td>
           <td> {{ commodity.supply}}</td>
-          </td>
         <tr> <td>Allocation</td>
           <td> {{ commodity.allocation_ratio}}</td>
-          </td>
         <tr> <td>Monetary Effective Demand</td>
           <td> {{ commodity.monetarily_effective_demand}}</td>
-          </td>
         <tr> <td>Investment Proportion</td>
           <td> {{ commodity.investment_proportion}}</td>
-          </td>
       </tbody>
     </table>
 
