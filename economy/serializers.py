@@ -33,15 +33,12 @@ class StockSerializer(serializers.ModelSerializer):
         ]
 
 class OwnerSerializer(serializers.ModelSerializer):
-    stocks=StockSerializer(many=True,read_only=True)
     class Meta:
         model = Owner
         fields = [
             "id",
             "name",
-            "simulation",
             "commodity",
-            "stocks",
         ]
 
 class IndustrySerializer(serializers.ModelSerializer):
