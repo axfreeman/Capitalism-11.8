@@ -23,6 +23,7 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
     path('', include('accounts.urls')),
     path('', include('economy.urls')),
+    path('', include('frontend.urls')),
     # API Schema:
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     # Optional UI:

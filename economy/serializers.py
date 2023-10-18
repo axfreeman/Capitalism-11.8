@@ -17,7 +17,6 @@ class SimulationSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 class StockSerializer(serializers.ModelSerializer):
-    owner=ReadOnlyField(source="owner_fk.name")
     commodity=ReadOnlyField(source="commodity.name")
     class Meta:
         model = Stock

@@ -1,0 +1,57 @@
+{% extends "base.html" %} {% block content %}
+<h3 class="w3-center">Commodities in project {{simulation}} </h3>
+<table id="commodities" class="w3-table-all w3-card w3-small">
+    <thead>
+        <tr>
+            {% if user.is_staff %}
+            <th class="w3-right-align">User</th>
+            {% endif %}
+
+            <th>id</th>
+            <th>Name</th>
+            <th>Simulation </th>
+            <th>Origin</th>
+            <th>Usage</th>
+            <th class="w3-right-align">Quantity</th>
+            <th class="w3-right-align">Turnover</th>
+            <th class="w3-right-align">Demand</th>
+            <th class="w3-right-align">Supply</th>
+            <th class="w3-right-align">Value</th>
+            <th class="w3-right-align">Price</th>
+            <th class="w3-right-align">Allocation</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for commodity in commodity_list %}
+        <tr>
+
+            {% if user.is_staff %}
+            <td>{{ commodity.simulation.user }}</td>
+            {% endif %}
+
+            <td> {{ commodity.id }} </td>
+            <td> <a href="{{commodity.id}}"> {{ commodity.name }} </a></td>
+            <td> <a href="{% url 'simulation' commodity.simulation.id %}">
+                    {{ commodity.simulation.name }}
+
+                    {% if user.is_staff %}
+                    ({{ commodity.simulation.id}})
+                    {% endif %}
+
+                </a></td>
+            <td> {{ commodity.origin }} </td>
+            <td> {{ commodity.usage}} </td>
+            <td class="w3-right-align"> {{ commodity.size |floatformat:0}} </td>
+            <td class="w3-right-align"> {{ commodity.turnover_time |floatformat:0}} </td>
+            <td class="w3-right-align"> {{ commodity.demand |floatformat:0}} </td>
+            <td class="w3-right-align"> {{ commodity.supply |floatformat:0}} </td>
+            <td class="w3-right-align"> {{commodity.total_value |floatformat:0}} ({{commodity.unit_value}})</td>
+            <td class="w3-right-align"> {{commodity.total_price |floatformat:0}} ({{commodity.unit_price}})</td>
+            <td class="w3-right-align"> {{ commodity.allocation_ratio }} </td>
+
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
