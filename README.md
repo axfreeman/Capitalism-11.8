@@ -71,3 +71,6 @@ In any simulation except a Template or an Initial simulation, the State is in a 
 
 There are a number of possible implementations of this concept eg foreign keys linking successive states. We will first try to implement it in this way but it could be implemented, for example, as a list in the User object.
 
+# environment
+Not much configuration - basically just get it working
+Allows createsuperuser --noinput

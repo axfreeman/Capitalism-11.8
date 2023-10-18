@@ -8,6 +8,7 @@ django = "*"
 django-rest-framework = "*"
 django-cors-headers = "*"
 crispy-bootstrap5 = "*"
+django-environ = "*"
 
 [dev-packages]
 

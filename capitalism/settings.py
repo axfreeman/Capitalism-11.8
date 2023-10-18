@@ -1,23 +1,23 @@
 import os
 from pathlib import Path
+import environ
 
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+env = environ.Env(
+    DEBUG = (bool, False)
+)
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 """
 https://docs.djangoproject.com/en/4.2/topics/settings/
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-c69kkb-5et0r(%g)*n5lbe^36rmkk^yk5mo%iyqs_w5^4ta@gg'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG=env('DJANGO_DEBUG')
+SECRET_KEY = env('DJANGO_SECRET_KEY')
+# SECRET_KEY = 'django-insecure-c69kkb-5et0r(%g)*n5lbe^36rmkk^yk5mo%iyqs_w5^4ta@gg'
 
 ALLOWED_HOSTS = []
 
@@ -127,8 +127,6 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS:True
-
-# AUTH_USER_MODEL = 'accounts.User'
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
