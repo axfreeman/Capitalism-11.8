@@ -47,5 +47,6 @@ urlpatterns = [
     path("owners/<pk>/", views.OwnerDetailView.as_view()),
     path("economy/",views.economy_view),
     path('simulations/<pk>',views.SimulationDetailView.as_view(), name='simulation'),
+    path('apicommodities',views.CommodityAPIView.as_view({'get':'list'})),
 ]
 

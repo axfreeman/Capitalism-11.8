@@ -6,6 +6,11 @@ from rest_framework import viewsets
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.template import loader
+from django.shortcuts import get_object_or_404
+from rest_framework.response import Response
+# from rest_framework.viewsets import ViewSet
+from rest_framework.views import APIView
+from rest_framework.renderers import TemplateHTMLRenderer
 from .models import *
 from .actions import create_simulation_from_project
 
@@ -60,6 +65,16 @@ class OwnerAPIView(viewsets.ModelViewSet):
 class CommodityAPIView(viewsets.ModelViewSet):
     serializer_class = CommoditySerializer
     queryset = Commodity.objects.all()
+
+class CommodityItemsList(APIView):
+    renderer_classes = [TemplateHTMLRenderer]
+    template_name = 'commodity_api_list.html'    
+
+    def get(self, request, format=None):
+        items = Commodity.objects.all()
+        serializer = CommoditySerializer(items, many=True)
+        return Response(serializer.data)        
+
 
 class SimulationAPIView(viewsets.ModelViewSet):
     serializer_class = SimulationSerializer
