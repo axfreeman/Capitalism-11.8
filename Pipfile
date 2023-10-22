@@ -10,6 +10,7 @@ django-cors-headers = "*"
 crispy-bootstrap5 = "*"
 django-environ = "*"
 drf-spectacular = "*"
+requests = "*"
 
 [dev-packages]
 

@@ -33,6 +33,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'economy',
     'accounts',
+    'frontend',
+    'api',
     'rest_framework',
     'crispy_forms',
     'crispy_bootstrap5',
