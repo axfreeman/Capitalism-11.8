@@ -1,5 +1,4 @@
 from django.contrib.auth.decorators import login_required
-
 from django.http import HttpResponse
 from django.shortcuts import redirect,render
 from rest_framework import viewsets
@@ -13,17 +12,6 @@ from rest_framework.views import APIView
 from rest_framework.renderers import TemplateHTMLRenderer
 from .models import *
 from .actions import create_simulation_from_project
-
-
-from .serializers import (
-    CommoditySerializer, 
-    SimulationSerializer, 
-    StockSerializer, 
-    IndustrySerializer, 
-    SocialClassSerializer, 
-    OwnerSerializer,
-    TraceSerializer,
-)
 
 # def home(request):
 #     template = 'home.html'
@@ -57,44 +45,6 @@ def userDashboard(request):
 def createSimulation(request,pk):
     create_simulation_from_project(request.user,pk)
     return redirect('/user-dashboard/')
-
-class OwnerAPIView(viewsets.ModelViewSet):
-    serializer_class=OwnerSerializer
-    queryset = Owner.objects.all()
-
-class CommodityAPIView(viewsets.ModelViewSet):
-    serializer_class = CommoditySerializer
-    queryset = Commodity.objects.all()
-
-class CommodityItemsList(APIView):
-    renderer_classes = [TemplateHTMLRenderer]
-    template_name = 'commodity_api_list.html'    
-
-    def get(self, request, format=None):
-        items = Commodity.objects.all()
-        serializer = CommoditySerializer(items, many=True)
-        return Response(serializer.data)        
-
-
-class SimulationAPIView(viewsets.ModelViewSet):
-    serializer_class = SimulationSerializer
-    queryset = Simulation.objects.all()
-    
-class StockAPIView(viewsets.ModelViewSet):
-    serializer_class = StockSerializer
-    queryset = Stock.objects.all()
-
-class IndustryAPIView(viewsets.ModelViewSet):
-    serializer_class = IndustrySerializer
-    queryset = Industry.objects.all()
-
-class SocialClassAPIView(viewsets.ModelViewSet):
-    serializer_class = SocialClassSerializer
-    queryset = SocialClass.objects.all()
-
-class TraceAPIView(viewsets.ModelViewSet):
-    serializer_class=TraceSerializer
-    queryset=Trace.objects.all()
 
 class SimulationListView(ListView):
     model=Simulation

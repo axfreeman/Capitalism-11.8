@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from rest_framework.serializers import ReadOnlyField
-from .models import (
+from economy.models import (
     Commodity,
     Simulation,
     Stock,

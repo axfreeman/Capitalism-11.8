@@ -4,15 +4,6 @@ from rest_framework import routers
 from economy import views
 from economy import actions
 
-router = routers.DefaultRouter()
-router.register(r'commodities', views.CommodityAPIView, 'Commodity')
-router.register(r'simulations', views.SimulationAPIView, 'Simulation')
-router.register(r'stocks', views.StockAPIView, 'Stock')
-router.register(r'industries', views.IndustryAPIView, 'Industry')
-router.register(r'classes', views.SocialClassAPIView, 'Social Class')
-router.register(r'owners', views.OwnerAPIView, 'Owner')
-router.register(r'trace', views.TraceAPIView, 'Trace')
-
 urlpatterns = [
     path('simulations/',views.SimulationListView.as_view(), name='simulations'),
     path('user-dashboard/',views.userDashboard, name='user_dashboard'),
@@ -24,7 +15,6 @@ urlpatterns = [
     path('restart-simulation/<int:pk>', views.home, name='restart-simulation'),
     path('',views.home),
     path('home/', views.home),
-    path('api/', include(router.urls)),
     path('demand/',actions.set_demand_and_supply),
     path('trade/', actions.trade),
     path('retrace/',actions.restart_trace),
@@ -47,6 +37,5 @@ urlpatterns = [
     path("owners/<pk>/", views.OwnerDetailView.as_view()),
     path("economy/",views.economy_view),
     path('simulations/<pk>',views.SimulationDetailView.as_view(), name='simulation'),
-    path('apicommodities',views.CommodityAPIView.as_view({'get':'list'})),
 ]
 
