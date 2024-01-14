@@ -10,7 +10,6 @@ from economy.models import (
     Trace
 )
 
-
 class SimulationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Simulation

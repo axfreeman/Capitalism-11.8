@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'frontend',
     'api',
     'rest_framework',
+    'rest_framework.authtoken',  # <-- Here    
     'crispy_forms',
     'crispy_bootstrap5',
     "drf_spectacular",    
@@ -142,7 +143,11 @@ LOGIN_REDIRECT_URL = '/economy'
 
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication', 
+    ]
 }
+
 SPECTACULAR_SETTINGS = {
     'TITLE': 'Capitalism 11.8',
     'DESCRIPTION': 'API documentation for Capitalism',

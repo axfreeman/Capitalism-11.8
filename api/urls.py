@@ -1,5 +1,4 @@
 from django.urls import path, include
-from .views import diversion
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 from django.urls import path, include
 from rest_framework import routers
@@ -16,12 +15,11 @@ router.register(r'trace', TraceAPIView, 'Trace')
 
 urlpatterns = [
     path('api/', include(router.urls)),
-    path('diversion/', diversion, name='APICommodities'), #TODO temporary, delete this when done
-    path('apicommodities',CommodityAPIView.as_view({'get':'list'})),
     path('api-auth/', include('rest_framework.urls')),
-    # API Schema:
-    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
-    # Optional UI:
-    path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
-    path('api/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
+    # path('api/commodities/',CommodityListAPIView.as_view(), name='Commodities'),
+    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),    # API Schema:
+    path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),    # Optional UI:
+    path('api/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),     # Optional UI:
+    path('hello/', HelloView.as_view(), name='hello'),    
+    path("api/action/", BasicAPI.as_view()),
 ]

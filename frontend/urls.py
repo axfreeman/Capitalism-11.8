@@ -3,5 +3,5 @@ from django.urls import path, include
 from .views import commodities
 
 urlpatterns = [
-    path('frontend/', commodities,name='APICommodities'),
+    path('frontend/', commodities, name='FrontEndCommodities'),
 ]
