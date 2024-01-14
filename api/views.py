@@ -81,6 +81,6 @@ class BasicAPI(APIView):
     def post(self, request):
         req_data = request.data # Currently we ignore this because only use posts to ask for actions. Later might use it
         data = "Thank you. Your wish is my command"
-        actions.admin_reset()
+        actions.admin_reset(request)
         return Response(data, status=status.HTTP_200_OK)
     
